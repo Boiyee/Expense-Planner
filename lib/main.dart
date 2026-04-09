@@ -14,8 +14,10 @@ class MyApp extends StatelessWidget {
       title: 'Personal Expenses',
       theme: ThemeData(
         primarySwatch: Colors.purple,
-        colorScheme: ColorScheme.light().copyWith(secondary: Colors.amber),
-        errorColor: Colors.red,
+        colorScheme: ColorScheme.light().copyWith(
+          secondary: Colors.amber,
+          error: Colors.red,
+        ),
         fontFamily: 'Quicksand',
         textTheme: ThemeData.light().textTheme.copyWith(
           titleMedium: TextStyle(
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
             fontWeight: FontWeight.bold,
             fontSize: 18,
           ),
-          button: TextStyle(color: Colors.white),
+          labelLarge: TextStyle(color: Colors.white),
         ),
         appBarTheme: AppBarTheme(
           titleTextStyle: TextStyle(
@@ -121,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Chart(recentTransactions),
+            Chart(_recentTransactions),
             TransactionList(_userTransactions, _deleteTransaction),
           ],
         ),
