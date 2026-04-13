@@ -19,4 +19,4 @@ samples, guidance on mobile development, and a full API reference.
 - Whatsapp: wa.me/7052006201
 - X: x.com/OduwaleJubreel
 - Github Profile: github.com/Boiyee
-- 
+- LinkedIn: 
