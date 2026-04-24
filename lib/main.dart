@@ -90,8 +90,8 @@ class _MyHomePageState extends State<MyHomePage> {
       context: ctx,
       builder: (_) {
         return GestureDetector(
-          onTap: () {},
           child: NewTransaction(_addNewTransaction),
+          onTap: () {},
           behavior: HitTestBehavior.opaque,
         );
       },
